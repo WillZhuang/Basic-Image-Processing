@@ -23,8 +23,8 @@ def sharpenFiltering(img):
         for col in range(1, inputImg.shape[1]-1):
             dx, dy = 0.0, 0.0
             #convolving both filters
-            for x_filter in xrange(3):
-                for y_filter in xrange(3):
+            for x_filter in range(3):
+                for y_filter in range(3):
                     dx += inputImg[row+x_filter-1][col+y_filter-1]*fh[x_filter][y_filter]
                     dy += inputImg[row+x_filter-1][col+y_filter-1]*fy[x_filter][y_filter]
             
